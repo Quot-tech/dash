@@ -1,0 +1,12 @@
+#price-estimation-container.container-narrow ng-controller="EstimationController"
+  #question
+    h2 專案預算評估
+  #choice
+    div.hide id="ques-{{question.name}}" ng-repeat="question in questions"
+      h4 {{question.question}}
+      .option.pull-left ng-repeat="option in question.options" ng-click="next(option.next, question.name)"
+        .icon.circle
+          i class="icon-{{option.icon}}"
+          span.text {{option.text}}
+        p {{option.title}}
+      .clear-float

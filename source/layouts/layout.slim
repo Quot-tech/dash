@@ -1,0 +1,21 @@
+doctype html
+html  ng-app=""
+  head
+    meta charset="utf-8"
+    meta name="keywords" content="系統開發,雲端,解決方案"
+    meta name="description" content="小型系統開發、雲端解決方案的最速團隊！"
+    /! Always force latest IE rendering engine or request Chrome Frame
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+
+    /! Use title if it's in the page YAML frontmatter
+    title DASH，最火速的雲端解決方案團隊!!!
+
+    == stylesheet_link_tag "bootstrap", "main", "common" 
+    /, "font-awesome"
+    == javascript_include_tag  "all"
+    / link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"
+    link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet"
+    link href='http://fonts.googleapis.com/css?family=Exo:800,700italic,800italic|Bangers' rel='stylesheet' type='text/css'
+
+  body class="#{page_classes}"
+    == yield

@@ -1,0 +1,165 @@
+nav
+  / .container-narrow
+  ul.nav.nav-pills.pull-right
+    li
+      a href="#marketing"
+        | 特色
+    li
+      a href="#flow"
+        | 服務流程
+    li
+      a href="#team"
+        | 核心團隊
+    li
+      a href="#contact"
+        | 聯絡我們
+  header
+    h1.muted.logo DASH
+  hr
+
+section.jumbotron
+  .container-narrow
+    .spirit-box
+      header.logo
+        h2 DASH
+      article
+        header
+          h3 
+            | 最火速的
+            strong 雲端解決方案
+            | 團隊!!!
+        p.lead 
+          | 在瞬息萬變、競爭激烈的現代，你還有時間等待老派接案公司那不敢恭維的溝通速度嗎？
+          br
+          | 別讓「
+          strong 網站
+          | 」成了你生意上的瓶頸！
+          br
+          | 「找出最佳方案」、「超快速開發」及「優化使用者觀感」是我們的核心價值
+          br
+          | 讓我們為您的企業加速吧！
+      / a.btn.btn-large.btn-success href="#"
+
+.container-narrow
+  hr
+
+section.marketing
+  a name="marketing"
+  .container-narrow
+    .row-fluid
+      .span4
+        section
+          .service.front
+            i.icon-cloud
+          header
+            h3 前端功能設計
+          p 
+            | 開發各式瀏覽器端功能，優化使用性及使用者觀感，更減輕伺服器負擔
+        
+      .span4
+        section
+          .service.system
+            i.icon-sitemap
+          header
+            h3 
+              | 高速
+              strong 系統開發
+          p 大膽採用各式最新技術，同時兼顧安全性及開發速度
+      
+      .span4
+        section
+          .service.fast
+            | 14
+          header
+            h3 14天完成大小專案
+          p 
+            | 最精準的專案管理及系統規劃人員，準確了解需求、快速提出最佳方案，
+            | 確認需求後絕不囉嗦，兩星期內火速完成專案
+
+section.flow.deep-blue
+  a name="flow"
+  .container-narrow
+    .row-fluid
+      header
+        h2.title 服務流程
+    .row-fluid
+      .span3
+        .step 1
+        h3 了解需求
+        p 徹底了解客戶使用情境及目地，分析使用者需求
+      .span3
+        .step 2
+        h3 提出方案
+        p 依照分析結果提出可行方案、報價，並簽訂合約
+      .span3
+        .step 3
+        h3 快速開發
+        p 集中火力火速開發！兩週內準時完成！
+      .span3
+        .step 4
+        h3 客戶驗收
+        p 交付成果，提供客戶一星期測試期，確認後即結案
+
+section.team
+  a name="team"
+  .container-narrow
+    .row-fluid
+      header
+        h2.title 核心團隊
+    .row-fluid
+      section.span4.member.kevin
+        .photo-holder
+          image src="/images/kevin.jpg"
+        header
+          h3 Kevin
+        p 雲端解決方案規劃、系統設計
+
+      section.span4.member.chn
+        .photo-holder
+          image src="/images/chn.jpg"
+        header
+          h3 CHN
+        p 專案管理、UX設計
+
+      section.span4.member.shane
+        .photo-holder style="background-image: url(#{ lorem.image '300x450', :text=>'Shane', :background_color => '333'})"
+          image src="#{ lorem.image '300x450', :text=>'Shane', :random_color=>true }"
+        header
+          h3 Shane
+        p 系統開發、效能優化
+      hr
+
+section.contact
+  a name="contact"
+  .container-narrow
+    .row-fluid
+      header
+        h2.title 聯絡我們
+    .row-fluid
+      .span6.informations
+        table
+          tr
+            td Email
+            td 
+              | : 
+            td kevin.shu@milestones.cc
+          tr
+            td Phone
+            td 
+              | : 
+            td 0972-332-698
+          tr
+            td Address
+            td 
+              | : 
+            td 台北市信義區基隆路二段145號9f
+      .span6
+        / i.icon-comments-alt.message
+        / img src="/images/contactus.jpg"
+
+footer.footer.deep-blue
+  p
+    | &copy; 2013 &nbsp
+    strong.logo DASH
+    | .tw
+/! /container

@@ -1,0 +1,212 @@
+@import "compass/css3"
+// $header1: 'Exo', sans-serif 
+$header1: 'Bangers', cursive
+$main-blue: #306FA2
+// rgb(22, 93, 150)
+
+h1, h2, h3
+  line-height: 125%
+
+@mixin logo
+  font-family: 'Bangers', cursive
+  // font-style: italic
+  // font-weight: 800
+
+#container 
+  width: 960px
+  margin: 0px auto
+
+body
+  padding-top: 20px
+  // padding-bottom: 40px
+
+
+/* Custom container */
+.container-narrow 
+  margin: 0 auto
+  max-width: 700px
+
+// .container-narrow > hr 
+//  margin: 30px 0
+
+h1.logo
+  @include logo
+  background: url(/images/logo.png) no-repeat top left
+  background-size: auto 42px
+  text-indent: -100%
+
+.spirit-box
+  background: url(/images/dash_arrow.png) no-repeat top center
+  // background-position: center
+  // background-repeat: 
+  h2 
+    @include logo
+    @include transition(all 0.4s)
+    font-size: 140px
+    line-height: 180px
+    letter-spacing: 0.05em
+    // width: 400px
+    // &:hover
+    //   // font-size: 160px
+    //   width: 480px 
+  h3
+    // font-size: 48px
+
+  p
+    font-size: medium
+
+  &:hover
+    h2
+      // width: 640px 
+      font-size: 180px
+      letter-spacing: 0.3em
+
+/* Main marketing message and sign up button */
+nav
+  padding: 0px 30px
+  hr
+    margin: 10px 0
+
+.jumbotron 
+  padding: 60px 0 30px
+  text-align: center
+
+.jumbotron h1 
+  font-size: 72px
+  line-height: 1
+
+.jumbotron .btn 
+  font-size: 21px
+  padding: 14px 24px
+
+
+/* Supporting marketing content */
+.marketing, .flow, .team, .contact 
+  padding: 60px 0
+  text-align: center
+  .title
+    font-size: 48px
+    font-weight: normal
+    margin-bottom: 20px
+
+.marketing
+  font-weight: normal
+  h3
+    font-weight: normal
+  p + h4 
+    margin-top: 28px
+  p
+    font-size: medium
+
+.service
+  width: 100px
+  height: 100px
+  // background: white
+  margin: 0px auto
+  padding: 15px
+  // @include border-radius(50%)
+  // @include transition(width 0.5s, height 0.5s, background 0.5s, line-height 0.5s)
+  font-size: 74px
+  line-height: 100px
+  color: $main-blue
+
+  &.fast
+    font-weight: bold
+
+  i
+    font-size: 96px
+
+  // &:hover
+  //   &.fast
+  //     background: rgb(226, 109, 0)
+  //   &.front
+  //     background: rgb(51, 143, 65)
+  //   &.system
+  //     background: rgb(137, 190, 233)
+
+.flow
+  .step
+    width: 80px
+    height: 80px
+    @include border-radius(50%)
+    background: white
+    margin: 0px auto
+    padding: 15px
+    font-size: 80px
+    line-height: 80px
+    color: $main-blue
+  h3
+    font-weight: medium
+    // font-size: x-large
+
+
+.team
+  @include transition(all 0.4s)
+  background: #61B9B5
+  color: white
+  .member
+    img
+      opacity: 0
+      @include transition(opacity 0.5s)
+      &:hover
+        opacity: 1
+
+    .photo-holder
+      background-size: 100% auto
+
+    &.kevin .photo-holder
+      background-image: url(/images/kevin_gray.jpg)
+
+    &.chn .photo-holder
+      background-image: url(/images/chn_gray.jpg)
+
+.contact
+  color: #222
+  text-align: left
+  background-image: url(/images/contactus.jpg)
+  background-size: auto 420px
+  background-position: right
+  background-repeat: no-repeat
+  .message
+    font-size: 200px
+  .informations
+    padding: 40px 0px
+    font-size: large
+  tr
+    height: 32px
+
+.footer
+  padding: 10px 30px
+  p
+    text-align: center
+    margin: 0
+    font-size: x-large
+    color: rgb(133, 161, 211)
+
+.deep-blue
+  background: $main-blue
+  color: white
+
+.light-blue
+  background: rgb(87, 122, 184)
+  color: white
+
+.dark
+  background: #777
+  color: white
+
+//===== Estimation =====//
+.option
+  text-align: center
+  width: 24%
+
+.icon
+  background: #567
+  margin: 0px auto
+  i, .text
+    font-size: 64px
+    line-height: 120px
+    color: white
+  .text
+    font-size: 46px
+    // line-height: 80px
